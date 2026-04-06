@@ -1,16 +1,83 @@
-# React + Vite
+# 📝 React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern Todo App built with **React + Material UI**, featuring task management, filtering, and persistent storage using localStorage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## React Compiler
+* ✅ Add new tasks
+* ✏️ Edit existing tasks
+* 🗑️ Delete tasks with confirmation
+* ✔️ Mark tasks as completed
+* 🔍 Filter tasks (All / Completed / Not Completed)
+* 💾 Persistent storage using localStorage
+* 🎨 Clean UI with Material UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚛️ React (Hooks + Context API)
+* 🎯 useReducer for state management
+* 🎨 Material UI (MUI)
+* 💾 localStorage
+* 🆔 UUID for unique IDs
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── Todo.jsx
+│   └── TodoList.jsx
+│
+├── contexts/
+│   └── TodosContext.jsx
+│
+├── reducers/
+│   └── todosReducer.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/todo-app.git
+cd todo-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the app locally:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧠 What I Learned
+
+* Managing global state using Context + useReducer
+* Handling CRUD operations in React
+* Working with Material UI components
+* Persisting data with localStorage
+* Deploying React apps using GitHub Pages
+
+---
+
+
